@@ -1,0 +1,20 @@
+{
+
+	"name": "DarkMode",
+	"version": "0.0.2",
+
+	"manifest_version": 2,
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content.js"]
+		}
+	],
+	"background":{
+		"scripts": ["background.js"]
+	},
+	"browser_action":{
+		"default_icon": "icon.png"
+	}
+}
